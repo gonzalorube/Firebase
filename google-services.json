@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "665319598415",
+    "firebase_url": "https://nysl-app-gfr.firebaseio.com",
+    "project_id": "nysl-app-gfr",
+    "storage_bucket": "nysl-app-gfr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665319598415:android:16d4e390569f1391",
+        "android_client_info": {
+          "package_name": "com.gfr.nysl_app_gfr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665319598415-guq4an496nutkjlsar2r3idguajhsiun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYEFivK9TOOXYNWC4Cx3NkXYAXD4jVvMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "665319598415-guq4an496nutkjlsar2r3idguajhsiun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
