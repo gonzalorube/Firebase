@@ -42,9 +42,9 @@
         margin: 0px;
       }
   .btn-primary{
-        background-image: linear-gradient(#370B0B, #752A2A, #370B0B);
+        background-color: #1E301E;
         border-radius: 0;
-        border: 2px solid #707070;
+        border: 2px solid #333333;
        }
   .fondo{
     background-color: #1E1919;

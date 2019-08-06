@@ -1,11 +1,18 @@
 <template>
-  <div>
-    <div class="subtitle"><h6><em>Next games</em></h6></div>
+  <div class="container-fluid">
+  <div class="row subtitle"><h6><em>Next games</em></h6></div>
 <!--      <div v-for="(partido, index) of partidos">-->
+<div class="row">
+  <div class="col-12">
+
+  
       <router-link :to="{ name: 'gameinfo', params: {id: partido.id, fecha: partido.fecha, local: partido.local, lugar: partido.lugar, visitante: partido.visitante, hora: partido.hora, mapa: partido.mapa} }" v-for="(partido, index) of partidos" :key="index">
         <partido-del-dia v-bind="partido" />
       </router-link>
 <!--</div>-->
+
+   </div>
+     </div>
    </div>
 </template>
 
