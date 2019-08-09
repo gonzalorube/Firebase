@@ -10,7 +10,9 @@
   "dependencies": {
     "@jeremyhamm/vue-slider": "^0.1.16",
     "core-js": "^2.6.5",
+    "firebase": "^6.3.4",
     "vue": "^2.6.10",
+    "vue-google-signin-button": "^1.0.4",
     "vue-router": "^3.0.3"
   },
   "devDependencies": {

@@ -170,4 +170,7 @@ export default {
       }
     }
   }
+  .navIcon {
+    padding: 28px 0 0 0;
+  }
 </style>

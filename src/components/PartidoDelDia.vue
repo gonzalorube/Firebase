@@ -47,33 +47,33 @@
         border: 2px solid #333333;
        }
   .fondo{
-    background-color: #1E1919;
-  }
+        background-color: #1E1919;
+      }
   .fecha{
-    float:left;
-    padding: 10px;
-    margin: 0;
-  }
+        float:left;
+        padding: 10px;
+        margin: 0;
+      }
   .hora{
-    float: right;
-    padding: 10px;
-    margin: 0;
-  }
+        float: right;
+        padding: 10px;
+        margin: 0;
+      }
   .match{
-    position: absolute;
-    padding: 0;
-    margin: 0 0 0 90px;
-  }
+        position: absolute;
+        padding: 0;
+        margin: 0 0 0 90px;
+      }
   h5{
-    color: #BFBCBC;
-    font-size: 22px;
-    font-weight: lighter;
-    margin: 0;
-  }
+        color: #BFBCBC;
+        font-size: 22px;
+        font-weight: lighter;
+        margin: 0;
+      }
   h6{
-    color: #BFBCBC;
-    font-size: 14px;
-    font-weight: lighter;
-    margin: 0;
-  }
+        color: #BFBCBC;
+        font-size: 14px;
+        font-weight: lighter;
+        margin: 0;
+      }
 </style>

@@ -31,7 +31,7 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin: 0 0 20px 0;
+    margin: 0 0 0px 0;
   }
   #logo {
     vertical-align: middle;
@@ -54,6 +54,7 @@ export default {
     font-weight: 600;
     color: #BFBCBC;
     min-width: 250px;
+    margin: 0;
   }
   h2 {
     font-size: 32px;

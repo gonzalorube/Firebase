@@ -2,6 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import GameInfo from './views/GameInfo.vue'
+import Login from './views/Login.vue'
+import Register from './views/Register.vue'
+import Auth from './components/Auth.vue'
+import AuthSuccess from './components/AuthSuccess.vue'
 
 Vue.use(Router)
 
@@ -24,6 +28,26 @@ export default new Router({
       path: '/gameinfo/:id/:fecha/:local/:lugar/:visitante/:hora/:mapa',
       name: 'gameinfo',
       component: GameInfo
-    }
+    },
+    {
+      path:'/register',
+      name: 'Register',
+      component: Register
+    },
+    {
+      path: '/auth',
+      name: 'Auth',
+      component: Auth
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    }/*,
+    {
+      path: '/success',
+      name: 'AuthSuccess',
+      component: AuthSuccess
+    }*/
   ]
 })

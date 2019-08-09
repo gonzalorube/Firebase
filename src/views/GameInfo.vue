@@ -30,13 +30,6 @@ export default {
       ]
     }
   }
-  /*:matchinfo='[
-  {"local": "U4", "visitante": "U6", "lugar": "Greenbay", "hora": "10:00", "fecha": "01/01", "mapa": "https://goo.gl/maps/gqQ5EADc4SVn2qDk6"},
-  {"local": "U4", "visitante": "U6", "lugar": "Greenbay", "hora": "10:00", "fecha": "01/01", "mapa": "https://goo.gl/maps/gqQ5EADc4SVn2qDk6"},
-  {"local": "U4", "visitante": "U6", "lugar": "Greenbay", "hora": "10:00", "fecha": "01/01", "mapa": "https://goo.gl/maps/gqQ5EADc4SVn2qDk6"},
-  {"local": "U4", "visitante": "U6", "lugar": "Greenbay", "hora": "10:00", "fecha": "01/01", "mapa": "https://goo.gl/maps/gqQ5EADc4SVn2qDk6"},
-  {"local": "U4", "visitante": "U6", "lugar": "Greenbay", "hora": "10:00", "fecha": "01/01", "mapa": "https://goo.gl/maps/gqQ5EADc4SVn2qDk6"}
-]'*/
 }
 </script>
 
