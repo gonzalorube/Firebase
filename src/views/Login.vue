@@ -3,13 +3,10 @@
     <Header />
     <div class="subtitle"><h6><em>Login</em></h6></div>
     <Auth />
-    <h3>Or Log in with Google</h3>
+    <h4>Or Sign in with Google</h4>
     <FormLogin />
     <h3>Not registered yet?</h3>
-    <h6>If you're not already registered, you can do it as follows:</h6>
-    <a class="nav-link" href="#/register">
-      <h3>Register here</h3>
-    </a>
+    <h6>If you're not already registered, you can do it <a class="nav-link" href="#/register">here</a></h6>
     <Footer />
   </div>
 </template>
@@ -56,6 +53,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
+a {
+  color: #0000CC;
+}
   .btn {
     color: #3F3C3C;
     background-color: #EFECEC;

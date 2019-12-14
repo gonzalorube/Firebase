@@ -5,7 +5,8 @@ import GameInfo from './views/GameInfo.vue'
 import Login from './views/Login.vue'
 import Register from './views/Register.vue'
 import Auth from './components/Auth.vue'
-import AuthSuccess from './components/AuthSuccess.vue'
+import RegisterSuccess from './views/RegisterSuccess.vue'
+import LoginSuccess from './views/LoginSuccess.vue'
 
 Vue.use(Router)
 
@@ -13,6 +14,12 @@ export default new Router({
   routes: [
     {
       path: '/',
+      redirect: '/home',
+      name: 'home',
+      component: Home
+    },
+    {
+      path: '/home',
       name: 'home',
       component: Home
     },
@@ -43,11 +50,16 @@ export default new Router({
       path: '/login',
       name: 'Login',
       component: Login
-    }/*,
+    },
     {
       path: '/success',
-      name: 'AuthSuccess',
-      component: AuthSuccess
-    }*/
+      name: 'RegisterSuccess',
+      component: RegisterSuccess
+    },
+    {
+      path: '/logsuccess',
+      name: 'LoginSuccess',
+      component: LoginSuccess
+    }
   ]
 })

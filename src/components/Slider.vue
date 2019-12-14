@@ -3,7 +3,14 @@
     <!-- Nav Links -->
     <div ref="slider" class="navMenu" :style="[menuDirection, menuWidth]">
       <a href="javascript:void(0)" class="closebtn" @click="closeMenu()">&times;</a>
+      <button type="button" class="btn btn-outline-info usr" name="userCapital" v-if="isLoggedIn">
+        <span class="usrText">
+          Hi, <strong>{{ currentUser }}</strong>!
+        </span>
+      </button>
       <a @click="toggleMenu()" v-for="link in links" :key="link.id" :href="link.url">{{ link.text }}</a>
+      <a @click="logout(), toggleMenu()" v-if="isLoggedIn" href="#">Logout</a>
+      <a @click="toggleMenu()" v-if="!isLoggedIn" href="#/login">Sign up</a>
     </div>
     <!-- Hamburger Menu -->
     <nav ref="menuIcon" class="navIcon" :style="iconDirection">
@@ -54,7 +61,15 @@ export default {
       styles: styles,
       menuWidth: {
         'width': 0
-      }
+      },
+      isLoggedIn: false,
+      currentUser: false
+    }
+  },
+  created() {
+    if(firebase.auth().currentUser){
+      this.isLoggedIn = true;
+      this.currentUser = firebase.auth().currentUser.email;
     }
   },
   computed: {
@@ -112,6 +127,11 @@ export default {
       } else {
         this.closeMenu()
       }
+    },
+    logout() {
+      firebase.auth().signOut().then(() => {
+        this.$router.push('/login');
+      });
     }
   }
 }
@@ -172,5 +192,13 @@ export default {
   }
   .navIcon {
     padding: 28px 0 0 0;
+  }
+  .usr {
+    font-size: 20px;
+    text-align: center;
+    color: #1E30AA;
+  }
+  .usrText {
+    padding-left: 25px;
   }
 </style>

@@ -8,12 +8,11 @@
       :opacity="0.15"
       :links="[
         {'id': 1, 'text': 'About us', 'url': '#/about'},
-        {'id': 2, 'text': 'Contact us', 'url': 'mailto: info@nysl.com'},
-        {'id': 3, 'text': 'Sign in / out', 'url': '#/login'}
+        {'id': 2, 'text': 'Contact us', 'url': 'mailto: info@nysl.com'}
       ]"
     >
     </slider>
-      <a class="navbar-brand" href="/">
+      <a class="navbar-brand" href="#/home">
         <h1>NY  <img alt="nysl logo" src="../../assets/nysl_logo.png" id="logo">  SL</h1>
       </a>
     <div class="collapse navbar-collapse">
@@ -58,6 +57,7 @@ import Slider from '../../components/Slider.vue';
       if(firebase.auth().currentUser){
         this.isLoggedIn = true;
         this.currentUser = firebase.auth().currentUser.email;
+        console.log(this.isLoggedIn + ' ' + this.currentUser);
       }
     },
     methods: {

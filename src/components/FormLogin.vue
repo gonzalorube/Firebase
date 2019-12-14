@@ -7,16 +7,16 @@
               <h3>Login</h3>
               <form>
                 <div class="input-field">
-                  <i class="material-icons prefix">email</i>
-                  <input type="text" id="email" v-model="email">
-                  <label for="email">Email</label>
+                  <!--<i class="material-icons prefix">email</i>-->
+                  <!--<label for="email">Email</label>-->
+                  <input type="text" id="email" v-model="email" placeholder="email">
                 </div>
                 <div class="input-field">
-                  <i class="material-icons prefix">lock</i>
-                  <input type="password" id="password" v-model="password">
-                  <label for="password">Password</label>
+                  <!--<i class="material-icons prefix">lock</i>-->
+                  <!--<label for="password">Pass</label>-->
+                  <input type="password" id="password" v-model="password" placeholder="password">
                 </div>
-                <button @click="login()" class="btn btn-large grey lighten-4 black-text">Login</button>
+                <button @click="login()" class="btn btn-large grey lighten-4 black-text" type="submit">Login</button>
               </form>
             </div>
         </div>
@@ -26,6 +26,8 @@
 </template>
 
 <script>
+import { mdiAccount } from '@mdi/js';
+
 export default {
     data () {
       return {
@@ -36,8 +38,8 @@ export default {
     methods: {
       login (e) {
         firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(user => {
-          alert(`You are logged in as ${user.email}`);
-          this.$router.go({ path: this.$router.path });
+          alert(`You are logged in as ${this.email}`);
+          this.$router.push('/logsuccess');
         },
         err => {
           alert(err.message);
@@ -49,4 +51,13 @@ export default {
 </script>
 
 <style lang="css" scoped>
+h3 {
+  margin-bottom: 10px;
+}
+.input-field {
+  align-items: center;
+}
+.btn {
+  width: 200px;
+}
 </style>

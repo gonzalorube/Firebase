@@ -17,6 +17,11 @@ export default {
     Header,
     Partidos,
     Footer
+  },
+  data() {
+    return {
+      
+    }
   }
 }
 </script>
